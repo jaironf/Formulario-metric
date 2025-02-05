@@ -94,5 +94,39 @@ body {
     padding: 0.8rem;
   }
 }
+.info-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px;
+  text-align: left;
+}
+.info-card h1 {
+  text-align: center;
+  color: #595959;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.info-card p {
+  font-size: 1rem;
+  color: #767676;
+  margin: 0.5rem 0;
+}
+
+.info-card.show {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    padding: 1;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
