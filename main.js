@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('userForm');
+    const formCard = document.getElementById('formCard')
     const infoCard = document.getElementById('infoCard');
 
     const registeredEmails = ['user1@example.com', 'user2@example.com'];
@@ -48,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             clearError(message)
         }
 
+
         if (valid) {
             simulateAjaxRequest({
                 name: name.value,
@@ -63,11 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })
 
-    function setError(element, message) {
-        const errorMessage = element.nextElementSibling;
-        errorMessage.textContent = message;
-        errorMessage.style.display = 'block';
-    }   
+    
 
     function clearError(element) {
         const errorMessage = element.nextElementSibling;
@@ -85,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return phonePattern.test(phone)
     }
 
+
     function simulateAjaxRequest(data) {
         setTimeout(() => {
             document.getElementById('cardName').textContent = data.name;
@@ -93,11 +92,12 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('cardPhone').textContent = data.phone;
             document.getElementById('cardMessage').textContent = data.message;
 
+            formCard.classList.add('hidden')
             infoCard.classList.remove('hidden')
             infoCard.classList.add('show')
 
             console.log('Datos enviados correctamente', data)
-        }, 2000)  
+        }, 1000)  
     }
 
 })
