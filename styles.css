@@ -50,6 +50,7 @@ body {
   font-size: 1rem;
   box-sizing: border-box;
   margin-left: -30px;
+  font-family: sans-serif;
 }
 .form-container .input-wrap input::placeholder, .form-container .input-wrap textarea::placeholder {
   font-size: 0.75rem;
@@ -95,6 +96,7 @@ body {
   }
 }
 .info-card {
+  display: none;
   background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
@@ -127,6 +129,11 @@ body {
   100% {
     padding: 1;
   }
+}
+small.error-message {
+  color: red;
+  font-size: small;
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

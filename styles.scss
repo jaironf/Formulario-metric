@@ -60,6 +60,7 @@ body {
             font-size: 1rem;
             box-sizing: border-box;
             margin-left: -30px;
+            font-family: sans-serif;
 
             &::placeholder{
                 font-size: 0.75rem;
@@ -117,7 +118,7 @@ body {
 // PARTE DE ESTILO DE LA INFO CARD
 
 .info-card {
-    // display: none;
+    display: none;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
@@ -156,4 +157,13 @@ body {
     100% {
         padding: 1;
     }
+}
+
+
+//Estilo Errores
+
+small.error-message {
+    color: red;
+    font-size: small;
+    display: none;
 }
