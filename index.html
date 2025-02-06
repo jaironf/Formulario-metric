@@ -10,43 +10,34 @@
 </head>
 
 <body>
-    <div class="form-container">
-        <h1>Formulario Prueba</h1>
+    <div id="formCard" class="form-container flip-card">
+        <h1>Formulario</h1>
         <form id="userForm">
-            <label for="name">Name</label>
             <div class="input-wrap">
                 <input type="text" id="name" name="name" placeholder="Name" required>
                 <small class="error-message"></small>
             </div>
 
-            <!-- <label for="surName">Surname</label>
-            <input type="text" id="Surname" name="surName" placeholder="AQUI IRÁ EL ICONO" required>
-            <small class="error-message"></small> -->
-
-            <label for="email">Email</label>
             <div class="input-wrap">
-                <input type="email" id="email" name="email" placeholder="Otro icono" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
                 <small class="error-message"></small>
             </div>
 
-            <label for="password">Password</label>
             <div class="input-wrap">
-                <input type="password" id="password" name="password" placeholder="Otro icono mas" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
                 <small class="error-message"></small>
             </div>
 
-            <label for="phone">Phone</label>
             <div class="input-wrap">
-                <input type="tel" id="phone" name="phone" placeholder="Write your Phone" required>
+                <input type="tel" id="phone" name="phone" placeholder="Phone" required>
                 <small class="error-message"></small>
             </div>
 
-            <label for="message">Message</label>
             <div class="input-wrap">
-                <textarea name="message" id="message" placeholder="Write your message" required></textarea>
+                <textarea name="message" id="message" placeholder="Message" required></textarea>
                 <small class="error-message"></small>
             </div>
-
+            
             <button type="submit">Send</button>
 
         </form>
@@ -54,11 +45,11 @@
 
     <div id="infoCard" class="info-card hidden">
         <h1 class="infoTitle">User Info</h1>
-        <p><strong>Name:</strong> <span id="cardName"></span></p>
-        <p><strong>Email:</strong> <span id="cardEmail"></span></p>
-        <p><strong>Password:</strong> <span id="cardPassword"></span></p>
-        <p><strong>Phone:</strong> <span id="cardPhone"></span></p>
-        <p><strong>Message:</strong> <span id="cardMessage"></span></p>
+        <p><strong>Name:</strong> <br><span id="cardName"></span></p>
+        <p><strong>Email:</strong> <br><span id="cardEmail"></span></p>
+        <p><strong>Password:</strong> <br><span id="cardPassword"></span></p>
+        <p><strong>Phone:</strong> <br><span id="cardPhone"></span></p>
+        <p><strong>Message:</strong> <br><span id="cardMessage"></span></p>
     </div>
 
     <script src="main.js" defer></script>

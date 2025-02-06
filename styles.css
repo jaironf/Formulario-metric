@@ -9,127 +9,87 @@ body {
   height: 100vh;
 }
 
-.form-container {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 100%;
+.form-container,
+.info-card {
+  background-color: #373636;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 30px;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-bottom: 3em;
+  border-radius: 30px;
+  width: 250px;
+  height: 500px;
+  transition: 0.4s ease-in-out;
+  box-shadow: 2px 5px 10px rgb(76, 75, 75);
 }
-.form-container h1 {
+.form-container:hover,
+.info-card:hover {
+  transform: scale(1.05);
+  border: 1px solid rgb(6, 6, 6);
+}
+.form-container h1,
+.info-card h1 {
   text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
-  font-weight: 500;
-  size: 46px;
-  color: #595959;
+  color: #dcd7d7;
 }
-.form-container label {
-  margin-bottom: 0.5rem;
-  display: block;
-  text-align: left;
-  color: #767676;
-  font-size: small;
-  margin-left: -30px;
+.form-container p,
+.info-card p {
+  color: #dcd7d7;
+  margin-bottom: -3px;
 }
-.form-container .input-wrap {
-  position: relative;
-  margin-bottom: 1rem;
+.form-container .input-wrap,
+.info-card .input-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 30px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  box-shadow: inset 2px 5px 10px rgb(6, 6, 6);
+  margin-bottom: 30px;
+}
+.form-container .input-wrap input,
+.form-container .input-wrap textarea,
+.form-container .input-wrap p,
+.info-card .input-wrap input,
+.info-card .input-wrap textarea,
+.info-card .input-wrap p {
+  background: none;
+  border: none;
+  outline: none;
   width: 100%;
+  color: rgb(252, 249, 249);
 }
-.form-container .input-wrap input, .form-container .input-wrap textarea {
-  width: 130%;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-  box-sizing: border-box;
-  margin-left: -30px;
-  font-family: sans-serif;
-}
-.form-container .input-wrap input::placeholder, .form-container .input-wrap textarea::placeholder {
-  font-size: 0.75rem;
-  color: #d1cccc;
-}
-.form-container .input-wrap .error-message {
-  color: #EF0002;
-  font-size: 0.85rem;
-  margin-top: 0.25rem;
-}
-.form-container button {
-  width: 130%;
+.form-container button,
+.info-card button {
+  width: 100%;
   height: 50px;
-  margin-left: -30px;
-  background-color: #1A1A1A;
+  background-color: #dd6c2a;
   color: #ffffff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: medium;
+  box-shadow: 2px 2px 5px #ea925f;
 }
-.form-container button:hover {
-  background-color: #767676;
+.form-container button:hover,
+.info-card button:hover {
+  background-color: #fb7f38;
 }
-.form-container button:hover:active {
-  background-color: #595959;
+.form-container button:hover:active,
+.info-card button:hover:active {
+  background-color: #f4620e;
 }
 
-@media (max-width: 600px) {
-  .form-container {
-    padding: 1.5rem;
-    max-width: 90%;
-  }
-  h1 {
-    font-size: 1.5rem;
-  }
-  input, textarea {
-    font-size: 0.95rem;
-    padding: 0.65rem;
-  }
-  button {
-    padding: 0.8rem;
-  }
-}
-.info-card {
+.hidden {
   display: none;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin: 20px;
-  text-align: left;
-}
-.info-card h1 {
-  text-align: center;
-  color: #595959;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-.info-card p {
-  font-size: 1rem;
-  color: #767676;
-  margin: 0.5rem 0;
 }
 
-.info-card.show {
-  display: block;
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    padding: 1;
-  }
-}
 small.error-message {
   color: red;
   font-size: small;
