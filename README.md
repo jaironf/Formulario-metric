@@ -26,7 +26,7 @@ Este proyecto implementa una interfaz de formulario dinámica donde los datos in
 
 2. Navega al directorio del proyecto:
    ```bash
-   cd Formulario-Metric
+   cd formulario-Metric
    ```
 
 3. Abre el archivo `index.html` en tu navegador para visualizar el proyecto.
