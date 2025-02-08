@@ -1,4 +1,4 @@
-# Proyecto de Tarjetas Dinámicas con Formulario
+# Proyecto Formulario
 
 Este proyecto implementa una interfaz de formulario dinámica donde los datos ingresados por el usuario se validan y se muestran en una tarjeta de información. El diseño es completamente responsivo y está estilizado utilizando SCSS (Sass).
 
