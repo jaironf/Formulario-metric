@@ -72,6 +72,10 @@ body {
   color: rgb(252, 249, 249);
   border-bottom: 20px;
 }
+.form-container .input-wrap .span,
+.info-card .input-wrap .span {
+  font-size: 20px;
+}
 .form-container .btn,
 .info-card .btn {
   width: 100%;
@@ -91,6 +95,10 @@ body {
 .form-container .btn:hover:active,
 .info-card .btn:hover:active {
   background-color: #f4620e;
+}
+
+.hidden {
+  display: none;
 }
 
 small, .error-message {
