@@ -21,7 +21,7 @@ Este proyecto implementa una interfaz de formulario dinámica donde los datos in
 ## Cómo Ejecutar el Proyecto
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/Formulario-Metric.git
+   git clone https://github.com/tu-usuario/formulario-Metric.git
    ```
 
 2. Navega al directorio del proyecto:
